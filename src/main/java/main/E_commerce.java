@@ -2,6 +2,8 @@ package main;
 
 import java.util.Scanner;
 
+import login.login;
+
 public class E_commerce {
 
 	public static void main (String [] args ) {
@@ -9,24 +11,10 @@ public class E_commerce {
 		System.out.println("-------------------------------------------");
 		System.out.println("Entre Login ID  and password  ");
 		
-		Scanner sc = new Scanner (System.in);
-		
-		System.out.println("\t Entre Login ID :-  ");
-	    String  login_Id = sc.next();
-
-		System.out.println("\t Entre password :-  ");
-	    String password = sc.next();
-	    
-	    login(login_Id,password);
+        login.login();
+}
 	   
 	      
-          
-		
-		
-	}
-
-	private static void login(String login_Id, String password) {
-		// TODO Auto-generated method stub
-		
-	}
+        		
+	
 }
