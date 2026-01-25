@@ -3,6 +3,8 @@ package main;
 import java.util.Scanner;
 
 import login.login;
+import product.product_management;
+import user.user_management;
 
 public class E_commerce {
 
@@ -25,9 +27,10 @@ public class E_commerce {
 
         	option = sc.nextInt();
         	if (option == 1) {
-        		System.out.println("1. Product Mangement ");
+        		product_management.product_management();
         	} else if (option == 2) {
         		System.out.println("2. User  Mangement ");
+        		user_management.user_management();
         	} else if (option == 3) {
         		System.out.println("3. Exit From App ");
         		System.exit(0);
